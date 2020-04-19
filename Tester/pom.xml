@@ -5,7 +5,9 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>TesterCucumber</name>
   <description>Cucumber TEster	</description>
-  
+  <properties>
+    <project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
+</properties>
     <dependencies>
   
   <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
