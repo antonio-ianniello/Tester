@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="0.280032">
+    <testcase classname="HomeWork 2 Testing" name="HW2 prova del comando aiuto" time="0.255879">
+        <system-out>
+            <![CDATA[Given Ho iniziato la partita................................................passed
+When ho digitato "aiuto"....................................................passed
+And il programma ha stampato"vai,aiuto,fine,prendi,posa,guarda".............passed
+When ho digitato "fine".....................................................passed
+And la partita e finita.....................................................passed
+Then la riga "1" ha stampato "vai"..........................................passed
+And la riga "1" ha stampato "aiuto".........................................passed
+And la riga "1" ha stampato "prendi"........................................passed
+And la riga "1" ha stampato "posa"..........................................passed
+And la riga "1" ha stampato "guarda"........................................passed
+And la riga "1" ha stampato "fine"..........................................passed
+And il programma ha stampato "Grazie di aver giocato!"......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="HomeWork 2 Testing" name="HW2 prova del comando fine" time="0.001442">
+        <system-out>
+            <![CDATA[Given Ho iniziato la partita................................................passed
+When ho digitato "fine".....................................................passed
+And il programma ha stampato"Grazie di aver giocato!".......................passed
+And la partita e finita.....................................................passed
+Then il programma ha stampato "Grazie di aver giocato!".....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="HomeWork 2 Testing" name="Homework 2 caso digita vai est" time="0.001923">
+        <system-out>
+            <![CDATA[Given Ho iniziato la partita................................................passed
+When ho digitato "vai est"..................................................passed
+And il programma ha stampato"Aula N11"......................................passed
+When ho digitato "fine".....................................................passed
+And la partita e finita.....................................................passed
+Then la riga "1" ha stampato "N11"..........................................passed
+And il programma ha stampato "Grazie di aver giocato!"......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="HomeWork 2 Testing" name="Homework 2 caso digita vai ovest" time="0.001784">
+        <system-out>
+            <![CDATA[Given Ho iniziato la partita................................................passed
+When ho digitato "vai ovest"................................................passed
+And il programma ha stampato"Sei in Laboratorio Campus".....................passed
+When ho digitato "fine".....................................................passed
+And la partita e finita.....................................................passed
+Then la riga "1" ha stampato "Laboratorio Campus"...........................passed
+And il programma ha stampato "Grazie di aver giocato!"......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="HomeWork 2 Testing" name="Homework 2 caso digita vai nord e vittoria" time="0.001799">
+        <system-out>
+            <![CDATA[Given Ho iniziato la partita................................................passed
+When ho digitato "vai nord".................................................passed
+And il programma ha stampato"Sei in Biblioteca".............................passed
+When ho digitato "fine".....................................................passed
+And la partita e finita.....................................................passed
+Then la riga "1" ha stampato "Biblioteca"...................................passed
+And il programma ha stampato "Hai vinto"....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="HomeWork 2 Testing" name="Homework 2 caso digita vai ovest 2 volte" time="0.002488">
+        <system-out>
+            <![CDATA[Given Ho iniziato la partita................................................passed
+When ho digitato "vai ovest"................................................passed
+And il programma ha stampato"Sei in Laboratorio Campus".....................passed
+When ho digitato "vai ovest"................................................passed
+And il programma ha stampato"Sei in Aula N11"...............................passed
+When ho digitato "fine".....................................................passed
+And la partita e finita.....................................................passed
+Then la riga "1" ha stampato "Laboratorio Campus"...........................passed
+And la riga "2" ha stampato "N11"...........................................passed
+And il programma ha stampato "Grazie di aver giocato!"......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="HomeWork 2 Testing" name="Homework 2 caso stanza bloccata" time="0.004473">
+        <system-out>
+            <![CDATA[Given Ho iniziato la partita................................................passed
+When ho digitato "vai est"..................................................passed
+And il programma ha stampato"Sei in Aula N11"...............................passed
+When ho digitato "vai sud"..................................................passed
+And il programma ha stampato"Sei in Bloccata"...............................passed
+When ho digitato "vai nord".................................................passed
+And il programma ha stampato"Sei in Bloccata"...............................passed
+When ho digitato "fine".....................................................passed
+And la partita e finita.....................................................passed
+Then la riga "1" ha stampato "N11"..........................................passed
+And la riga "2" ha stampato "Bloccata"......................................passed
+And la riga "3" ha stampato "Bloccata"......................................passed
+And il programma ha stampato "Grazie di aver giocato!"......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="HomeWork 2 Testing" name="Homework 2 caso stanza bloccata con chiave" time="0.006297">
+        <system-out>
+            <![CDATA[Given Ho iniziato la partita................................................passed
+When ho digitato "prendi chiave"............................................passed
+And il programma ha stampato"oggetto messo nella borsa correttamente!"......passed
+When ho digitato "vai est"..................................................passed
+And il programma ha stampato"Sei in Aula N11"...............................passed
+When ho digitato "vai sud"..................................................passed
+And il programma ha stampato"Sei in Bloccata"...............................passed
+When ho digitato "posa chiave"..............................................passed
+And il programma ha stampato"L' oggetto:chiave � stato posato correttamente".passed
+When ho digitato "vai nord".................................................passed
+And il programma ha stampato"Sei in Aula N11"...............................passed
+When ho digitato "fine".....................................................passed
+And la partita e finita.....................................................passed
+Then la riga "1" ha stampato "correttamente"................................passed
+And la riga "2" ha stampato "N11"...........................................passed
+And la riga "3" ha stampato "Bloccata"......................................passed
+And la riga "4" ha stampato "chiave"........................................passed
+And la riga "4" ha stampato "posato correttamente"..........................passed
+And la riga "5" ha stampato "N11"...........................................passed
+And il programma ha stampato "Grazie di aver giocato!"......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="HomeWork 2 Testing" name="Homework 2 caso stanza buia" time="0.003947">
+        <system-out>
+            <![CDATA[Given Ho iniziato la partita................................................passed
+When ho digitato "vai est"..................................................passed
+And il programma ha stampato"Sei in N11"....................................passed
+When ho digitato "vai nord".................................................passed
+And il programma ha stampato"Sei in Buia"...................................passed
+When ho digitato "guarda"...................................................passed
+And il programma ha stampato"qui c'� un buio pesto!"........................passed
+When ho digitato "fine".....................................................passed
+And la partita e finita.....................................................passed
+Then la riga "1" ha stampato "N11"..........................................passed
+And la riga "2" ha stampato "Buia"..........................................passed
+And la riga "3" ha stampato "buio"..........................................passed
+And il programma ha stampato "Grazie di aver giocato!"......................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

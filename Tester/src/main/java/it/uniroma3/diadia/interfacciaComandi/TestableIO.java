@@ -1,12 +1,11 @@
-package it.uniroma3;
+package it.uniroma3.diadia.interfacciaComandi;
 import java.util.ArrayList;
 import java.util.List;
-
-import it.uniroma3.diadia.interfacciaComandi.IO;
 
 
 public class TestableIO implements IO{
 
+	
 	private RigaLetta rigaCorrente;
 	private List<RigaLetta> righe;	
 	private int indiceRigaLetta=0;
@@ -82,4 +81,5 @@ public class TestableIO implements IO{
 		this.messaggiIniziali.add(messaggioIniziale);
 		
 	}
+	
 }
