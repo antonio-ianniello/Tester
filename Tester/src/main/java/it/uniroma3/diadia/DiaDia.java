@@ -1,13 +1,20 @@
 package it.uniroma3.diadia;
-
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
 import it.uniroma3.diadia.comandi.Comando;
 import it.uniroma3.diadia.comandi.FabbricaDiComandi;
 import it.uniroma3.diadia.comandi.FabbricaDiComandiFisarmonica;
-import it.uniroma3.diadia.interfacciaComandi.IO;
-import it.uniroma3.diadia.interfacciaComandi.IOConsole;
+
+
 
 public class DiaDia {
-	
+
 	static final private String MESSAGGIO_BENVENUTO = ""+
 			"Ti trovi nell'Universita', ma oggi e' diversa dal solito...\n" +
 			"Meglio andare al piu' presto in biblioteca a studiare. Ma dov'e'?\n"+
@@ -44,15 +51,64 @@ public class DiaDia {
 		if(this.partita.vinta())
 			IO.mostraMessaggio("Hai vinto ");
 
-		if(!this.partita.getGiocatore().giocatoreIsVivo())
-			IO.mostraMessaggio("Hai esaurito i Cfu");
-		
+		//	if(!this.partita.getGiocatore().giocatoreIsVivo())
+		//	IO.mostraMessaggio("Hai esaurito i Cfu");
+
 		return this.partita.isFinita();
-		
-	}
-	public static void main(String[] args) {
-		DiaDia dia = new DiaDia(new IOConsole());
-		dia.gioca();
+
 	}
 
-}
+	public static void main(String[] args)  throws IOException  {        
+		
+		/*
+		 ProcessBuilder processBuilder = new ProcessBuilder();
+		 processBuilder.command("cmd.exe", "/c", "mvn install:install-file -Dfile=C:\\Users\\anton\\.m2\\repository\\it\\uniroma3\\springBootwebAppdemo\\0.0.1-SNAPSHOT\\uploads\\prova.jar -DgroupId=it.uniroma3 -DartifactId=Tester -Dversion=0.1 -Dpackaging=jar");
+		 
+		 try {
+
+	            Process process = processBuilder.start();
+
+	            BufferedReader reader =
+	                    new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+	            String line;
+	            while ((line = reader.readLine()) != null) {
+	                System.out.println(line);
+	            }
+
+	            int exitCode = process.waitFor();
+	            System.out.println("\nExited with error code : " + exitCode);
+
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+
+		 */
+		 
+		 
+		File source= new File("C:\\Users\\anton\\git\\Tester\\Tester\\target\\cucumber-reports\\report.js");
+		File dest = new File("C:\\Users\\anton\\git\\CaricatoreFileHtml\\src\\main\\resources\\static\\js\\report.js");
+		copyFileUsingStream(source, dest);
+	    }
+		 
+	private static void copyFileUsingStream(File source, File dest) throws IOException {
+		InputStream is = null;
+		OutputStream os = null;
+		try {
+			is = new FileInputStream(source);
+			os = new FileOutputStream(dest);
+			byte[] buffer = new byte[1024];
+			int length;
+			while ((length = is.read(buffer)) > 0) {
+				os.write(buffer, 0, length);
+			}
+		} finally {
+			is.close();
+			os.close();
+		}
+	}}
+
+
+

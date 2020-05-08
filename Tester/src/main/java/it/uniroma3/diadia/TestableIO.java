@@ -1,6 +1,8 @@
-package it.uniroma3.diadia.interfacciaComandi;
+package it.uniroma3.diadia;
 import java.util.ArrayList;
 import java.util.List;
+
+import it.uniroma3.diadia.interfacciaComandi.RigaLetta;
 
 
 public class TestableIO implements IO{

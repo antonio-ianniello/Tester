@@ -1,4 +1,4 @@
-package it.uniroma3.diadia.interfacciaComandi;
+package it.uniroma3.diadia;
 
 public interface IO{
 

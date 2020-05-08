@@ -1,11 +1,14 @@
 package it.uniroma3;
 import static org.junit.Assert.assertTrue;
+
 import java.util.List;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import it.uniroma3.diadia.DiaDia;
+
+
 
 public class StepDefinition {	
 		private TestableIO interfaccia;
@@ -39,6 +42,9 @@ public class StepDefinition {
 			List<String> messaggiSalvati = this.getMyInterfacciaUtente().getMessaggiAtRiga(indice);
 			boolean trovato = this.stringaPresente(messaggiSalvati, messaggio);
 			assertTrue(trovato);
+			
+			//String trovata = this.stringaPresenteString(messaggiSalvati, messaggio);
+			//assertEquals(trovata,messaggio);
 		}
 
 		@Then("^il programma ha stampato \"([^\"]*)\"$")
@@ -46,6 +52,9 @@ public class StepDefinition {
 			List<String> messaggiFinali = this.getMyInterfacciaUtente().getMessaggiFinali();
 			boolean trovato = this.stringaPresente(messaggiFinali, messaggio);
 			assertTrue(trovato);
+			
+			//String trovata = this.stringaPresenteString(messaggiFinali, messaggio);
+			//assertEquals(trovata,messaggio);
 
 			System.out.println("\n MESSAGGI OUTPUT SONO: \n"+this.getMyInterfacciaUtente().getMessaggi());
 			//this.stampaPunteggio();
@@ -64,6 +73,20 @@ public class StepDefinition {
 				}
 			}
 			return trovato;
+		}
+		
+		public String stringaPresenteString(List<String> stringhe,String verifica) {
+			String stringa=null;
+			for(String mex: stringhe) {
+				if(mex.contains(verifica)) {
+					stringa=verifica;
+					this.punteggio++;
+				}
+				else if(!mex.contains(verifica)) {
+					stringa=mex;
+				}
+			}
+			return stringa;
 		}
 
 		public void stampaPunteggio() {

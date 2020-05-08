@@ -95,7 +95,7 @@ Feature: HomeWork 2 Testing
   When ho digitato "vai sud"
   And il programma ha stampato"Sei in Bloccata"
   When ho digitato "posa chiave"
-  And il programma ha stampato"L' oggetto:chiave è stato posato correttamente"
+  And il programma ha stampato"L' oggetto:chiave ï¿½ stato posato correttamente"
   When ho digitato "vai nord"
   And il programma ha stampato"Sei in Aula N11"
   When ho digitato "fine"
@@ -107,7 +107,7 @@ Feature: HomeWork 2 Testing
   And la riga "4" ha stampato "posato correttamente"
   And la riga "5" ha stampato "N11"
   And il programma ha stampato "Grazie di aver giocato!" 
-  
+    
   @Hw2
   Scenario: Homework 2 caso stanza buia
   Given Ho iniziato la partita
@@ -116,7 +116,7 @@ Feature: HomeWork 2 Testing
   When ho digitato "vai nord"
   And il programma ha stampato"Sei in Buia"
   When ho digitato "guarda"
-  And il programma ha stampato"qui c'è un buio pesto!"
+  And il programma ha stampato"qui c'ï¿½ un buio pesto!"
   When ho digitato "fine"
   And la partita e finita
   Then la riga "1" ha stampato "N11"

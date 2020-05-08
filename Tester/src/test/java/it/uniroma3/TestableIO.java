@@ -2,7 +2,7 @@ package it.uniroma3;
 import java.util.ArrayList;
 import java.util.List;
 
-import it.uniroma3.diadia.interfacciaComandi.IO;
+import it.uniroma3.diadia.IO;
 
 
 public class TestableIO implements IO{
