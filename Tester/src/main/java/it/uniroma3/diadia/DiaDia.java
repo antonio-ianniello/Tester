@@ -84,8 +84,8 @@ public class DiaDia {
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
-
-		 */
+	*/
+		 
 		 
 		 
 		File source= new File("C:\\Users\\anton\\git\\Tester\\Tester\\target\\cucumber-reports\\report.js");
