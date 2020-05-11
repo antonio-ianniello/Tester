@@ -52,7 +52,7 @@ public class DiaDia {
 			IO.mostraMessaggio("Hai vinto ");
 
 		//	if(!this.partita.getGiocatore().giocatoreIsVivo())
-		//	IO.mostraMessaggio("Hai esaurito i Cfu");
+		//	IO.mostraMessaggio("Hai esaurito i Cfu" );
 
 		return this.partita.isFinita();
 
