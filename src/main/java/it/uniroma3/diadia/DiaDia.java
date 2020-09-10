@@ -84,7 +84,6 @@ public class DiaDia {
 	            e.printStackTrace();
 	        }
 	*/
-<<<<<<< HEAD
 		 
 		 
 		 /*
