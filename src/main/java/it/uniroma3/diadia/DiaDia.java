@@ -87,7 +87,7 @@ public class DiaDia {
 	*/
 		 
 		 
-		 
+		 /*
 		File source= new File("C:\\Users\\anton\\git\\Tester\\target\\cucumber-reports\\report.js");
 		File dest = new File("C:\\Users\\anton\\git\\CaricatoreFileHtml\\src\\main\\resources\\static\\js\\report.js");
 		copyFileUsingStream(source, dest);
@@ -107,7 +107,7 @@ public class DiaDia {
 		} finally {
 			is.close();
 			os.close();
-		}
+		}*/
 	}}
 
 
