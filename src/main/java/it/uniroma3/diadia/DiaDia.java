@@ -1,12 +1,11 @@
 package it.uniroma3.diadia;
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
+
 import it.uniroma3.diadia.comandi.Comando;
 import it.uniroma3.diadia.comandi.FabbricaDiComandi;
 import it.uniroma3.diadia.comandi.FabbricaDiComandiFisarmonica;
@@ -85,12 +84,31 @@ public class DiaDia {
 	            e.printStackTrace();
 	        }
 	*/
+<<<<<<< HEAD
 		 
 		 
 		 /*
+=======
+		
+		//copia js
+>>>>>>> branch 'master' of https://github.com/antonio-ianniello/Tester.git
 		File source= new File("C:\\Users\\anton\\git\\Tester\\target\\cucumber-reports\\report.js");
-		File dest = new File("C:\\Users\\anton\\git\\CaricatoreFileHtml\\src\\main\\resources\\static\\js\\report.js");
+		
+		
+		//nuova destinazione di tymeleaf
+		File dest = new File("C:\\Users\\anton\\git\\CaricatoreFileHtml\\static\\js\\report.js");
+		
+		//vecchia destinazione prima di cambiare tymeleaf in property
+		//File dest = new File("C:\\Users\\anton\\git\\CaricatoreFileHtml\\src\\main\\resources\\static\\js\\report.js");
+		
+		
+		//dest2 è la destinazione corretta per maven, solo dopo aver copiato le due cartelle nel progetto maven
+		File dest2 = new File("C:\\Users\\anton\\.m2\\repository\\it\\uniroma3\\springBootwebAppdemo\\0.0.1-SNAPSHOT\\static\\js");
+		
+		//bisogna metterlo su maven, per ora ho usato due folder esterne templates and static
 		copyFileUsingStream(source, dest);
+		copyFileUsingStream(source, dest2);
+		
 	    }
 		 
 	private static void copyFileUsingStream(File source, File dest) throws IOException {
