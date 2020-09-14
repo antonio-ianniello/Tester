@@ -30,7 +30,7 @@ public class DiaDia {
 	public DiaDia(IO interfaccia) {
 		this.IO = interfaccia;
 		this.partita = new Partita();
-		this.factory=new FabbricaDiComandiFisarmonica(interfaccia);
+		this.factory=new FabbricaDiComandiFisarmonica();		//*1 tolto parametro interfaccia
 	}
 
 	public void gioca() {
@@ -44,13 +44,14 @@ public class DiaDia {
 
 	private boolean processaIstruzione(String istruzione) {
 		Comando comandoDaEseguire;
-		comandoDaEseguire= factory.costruisciComando(istruzione);
+		comandoDaEseguire= factory.costruisciComando(istruzione,this.IO);		//*2 aggiunto secondo parmaetro io
 		comandoDaEseguire.esegui(this.partita);
 
 		if(this.partita.vinta())
 			IO.mostraMessaggio("Hai vinto ");
 
-		//	if(!this.partita.getGiocatore().giocatoreIsVivo())
+			
+	    // if(!this.partita.getGiocatore().giocatoreIsVivo())
 		//	IO.mostraMessaggio("Hai esaurito i Cfu" );
 
 		return this.partita.isFinita();

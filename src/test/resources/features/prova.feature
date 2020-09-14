@@ -89,22 +89,22 @@ Feature: HomeWork 2 Testing
   Scenario: Homework 2 caso stanza bloccata con chiave
   Given Ho iniziato la partita
   When ho digitato "prendi chiave"
-  And il programma ha stampato"oggetto messo nella borsa correttamente!"
+  And il programma ha stampato"preso!"
  	When ho digitato "vai est"
  	And il programma ha stampato"Sei in Aula N11"
   When ho digitato "vai sud"
   And il programma ha stampato"Sei in Bloccata"
   When ho digitato "posa chiave"
-  And il programma ha stampato"L' oggetto:chiave � stato posato correttamente"
+  And il programma ha stampato"posato!"
   When ho digitato "vai nord"
   And il programma ha stampato"Sei in Aula N11"
   When ho digitato "fine"
   And la partita e finita
-  Then la riga "1" ha stampato "correttamente"
+  Then la riga "1" ha stampato "preso!"
   And la riga "2" ha stampato "N11"
   And la riga "3" ha stampato "Bloccata"
   And la riga "4" ha stampato "chiave"
-  And la riga "4" ha stampato "posato correttamente"
+  And la riga "4" ha stampato "posato!"
   And la riga "5" ha stampato "N11"
   And il programma ha stampato "Grazie di aver giocato!" 
     
