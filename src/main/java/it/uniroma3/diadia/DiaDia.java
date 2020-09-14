@@ -61,10 +61,12 @@ public class DiaDia {
 	public static void main(String[] args)  throws IOException  {        
 	
 		
-
+		/*
 		File source= new File("C:\\Users\\anton\\git\\Tester\\target\\cucumber-reports\\report.js");
-		
-		
+		//dest2 è la destinazione corretta per maven, solo dopo aver copiato le due cartelle nel progetto maven
+		File dest2 = new File("C:\\Users\\anton\\.m2\\repository\\it\\uniroma3\\springBootwebAppdemo\\0.0.1-SNAPSHOT\\static\\js");
+		copyFileUsingStream(source, dest2);
+		*/
 		//nuova destinazione di tymeleaf
 		//File dest = new File("C:\\Users\\anton\\git\\CaricatoreFileHtml\\static\\js\\report.js");
 		
@@ -72,12 +74,10 @@ public class DiaDia {
 		//File dest = new File("C:\\Users\\anton\\git\\CaricatoreFileHtml\\src\\main\\resources\\static\\js\\report.js");
 		
 		
-		//dest2 è la destinazione corretta per maven, solo dopo aver copiato le due cartelle nel progetto maven
-		File dest2 = new File("C:\\Users\\anton\\.m2\\repository\\it\\uniroma3\\springBootwebAppdemo\\0.0.1-SNAPSHOT\\static\\js");
 		
 		//bisogna metterlo su maven, per ora ho usato due folder esterne templates and static
 		//copyFileUsingStream(source, dest);
-		copyFileUsingStream(source, dest2);
+		
 		
 	    }
 		 
