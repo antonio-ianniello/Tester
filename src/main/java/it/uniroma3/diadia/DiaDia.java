@@ -59,44 +59,14 @@ public class DiaDia {
 	}
 
 	public static void main(String[] args)  throws IOException  {        
+	
 		
-		/*
-		 ProcessBuilder processBuilder = new ProcessBuilder();
-		 processBuilder.command("cmd.exe", "/c", "mvn install:install-file -Dfile=C:\\Users\\anton\\.m2\\repository\\it\\uniroma3\\springBootwebAppdemo\\0.0.1-SNAPSHOT\\uploads\\prova.jar -DgroupId=it.uniroma3 -DartifactId=Tester -Dversion=0.1 -Dpackaging=jar");
-		 
-		 try {
 
-	            Process process = processBuilder.start();
-
-	            BufferedReader reader =
-	                    new BufferedReader(new InputStreamReader(process.getInputStream()));
-
-	            String line;
-	            while ((line = reader.readLine()) != null) {
-	                System.out.println(line);
-	            }
-
-	            int exitCode = process.waitFor();
-	            System.out.println("\nExited with error code : " + exitCode);
-
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        } catch (InterruptedException e) {
-	            e.printStackTrace();
-	        }
-	*/
-		 
-		 
-		 /*
-=======
-		
-		//copia js
->>>>>>> branch 'master' of https://github.com/antonio-ianniello/Tester.git
 		File source= new File("C:\\Users\\anton\\git\\Tester\\target\\cucumber-reports\\report.js");
 		
 		
 		//nuova destinazione di tymeleaf
-		File dest = new File("C:\\Users\\anton\\git\\CaricatoreFileHtml\\static\\js\\report.js");
+		//File dest = new File("C:\\Users\\anton\\git\\CaricatoreFileHtml\\static\\js\\report.js");
 		
 		//vecchia destinazione prima di cambiare tymeleaf in property
 		//File dest = new File("C:\\Users\\anton\\git\\CaricatoreFileHtml\\src\\main\\resources\\static\\js\\report.js");
@@ -106,7 +76,7 @@ public class DiaDia {
 		File dest2 = new File("C:\\Users\\anton\\.m2\\repository\\it\\uniroma3\\springBootwebAppdemo\\0.0.1-SNAPSHOT\\static\\js");
 		
 		//bisogna metterlo su maven, per ora ho usato due folder esterne templates and static
-		copyFileUsingStream(source, dest);
+		//copyFileUsingStream(source, dest);
 		copyFileUsingStream(source, dest2);
 		
 	    }
@@ -125,7 +95,7 @@ public class DiaDia {
 		} finally {
 			is.close();
 			os.close();
-		}*/
+		}
 	}}
 
 
