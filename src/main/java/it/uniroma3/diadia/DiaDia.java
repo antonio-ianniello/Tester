@@ -59,7 +59,7 @@ public class DiaDia {
 	}
 
 	public static void main(String[] args)  throws IOException  {        
-	
+System.out.println("eseguo\n");
 		
 		/*
 		File source= new File("C:\\Users\\anton\\git\\Tester\\target\\cucumber-reports\\report.js");
@@ -80,7 +80,7 @@ public class DiaDia {
 		
 		
 	    }
-		 
+		/*
 	private static void copyFileUsingStream(File source, File dest) throws IOException {
 		InputStream is = null;
 		OutputStream os = null;
@@ -96,7 +96,7 @@ public class DiaDia {
 			is.close();
 			os.close();
 		}
-	}}
+	}*/}
 
 
 
